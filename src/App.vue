@@ -1,30 +1,33 @@
 <template>
-<v-app>
+  <v-app>
     <Header />
     <router-view />
-</v-app>
+    <Footer />
+  </v-app>
 </template>
 
 <style>
 #app {
-    text-align: center;
+  text-align: center;
 }
 </style>
 
 <script>
-import Header from './components/Header/Header';
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 // import LandingView from './components/LandingView';
 
 export default {
-    name: 'App',
+  name: "App",
 
-    components: {
-        // LandingView,
-        Header,
-    },
+  components: {
+    // LandingView,
+    Header,
+    Footer,
+  },
 
-    data: () => ({
-        //
-    }),
+  data: () => ({
+    //
+  }),
 };
 </script>
