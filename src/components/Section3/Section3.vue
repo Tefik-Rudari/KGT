@@ -1,53 +1,62 @@
 <template>
-  <section id="info" class="py-3">
-    <div class="container info-seaction">
-      <div class="row">
-        <div class="col-md-6 align-self-center" data-aos="fade-right">
-          <h3 class="headtitle">APPLE WATCH</h3>
-          <!-- <i class="fas fa-wrench fa-3x mb-2"></i> -->
-          <p class="subtitle">
-            Heavy on features.
-            <br />
-            Light on price.
-            <!-- HERE YOU CAN USE LINE HEIGHT -->
-          </p>
-          <p class="price">From $246</p>
-          <div class="text-center">
-            <v-btn rounded dark> Rounded Button </v-btn>
-          </div>
-        </div>
-        <div class="col-md-6" data-aos="fade-left">
-          <img src="../../assets/apple-watch.png" alt class="img-fluid" />
-        </div>
-      </div>
-    </div>
-  </section>
+<div id="app">
+    <v-app id="inspire">
+        <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
+            <v-timeline-item v-for="(item, i) in items" :key="i" :color="item.color" :icon="item.icon" :title="item.title" :description="item.description" fill-dot data-aos="fade-right">
+                <v-card :color="item.color" dark>
+                    <v-card-title class="title">
+                        {{ item.title }}
+                    </v-card-title>
+                    <v-card-text class="white text--primary">
+                        <p> {{ item.description }}</p>
+                        <v-btn :color="item.color" class="mx-0" outlined>
+                            Button
+                        </v-btn>
+                    </v-card-text>
+                </v-card>
+            </v-timeline-item>
+        </v-timeline>
+    </v-app>
+</div>
 </template>
 
-<style scoped>
-.info-seaction {
-  margin-top: 200px 200px;
-  margin-bottom: 100px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+<script>
+export default {
+
+    el: '#app',
+    data: () => ({
+        items: [{
+                color: 'red lighten-2',
+                icon: 'mdi-star',
+                title: 'Funksionet primare të kompanis',
+                description: 'Funksioni primar i KGT është shpërndarja efikase e materialeve të ndryshme, bëjmë tregti në sasi të vogëla me gazeta dhe materialit të shkrimit, në dyqane të specializuara. Si funksion secondar është edhe tregtia me shumicë jo e specializuar.'
+            },
+            {
+                color: 'purple darken-1',
+                icon: 'mdi-book-variant',
+                title: 'Tregtia me shumicë jo e specializuar',
+                description: 'Tregtia me shumicë jo e specializuar'
+            },
+            {
+                color: 'green lighten-1',
+                icon: 'mdi-airballoon',
+                title: '',
+                description: ''
+            },
+            {
+                color: 'indigo',
+                icon: 'mdi-buffer',
+                title: '',
+                description: ''
+            },
+        ],
+    }),
+
 }
-.headtitle {
-  font-weight: 600;
-  color: black;
-  margin-bottom: 50px;
-}
-.subtitle {
-  font-size: 48px;
-  color: #333;
-  font-weight: 600;
-  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
-    "Arial", sans-serif;
-  padding: 0;
-  margin: 0;
-}
-.price {
-  font-size: 21px;
-  font-weight: 600;
-  margin: 30px auto;
-}
+// new Vue({
+// vuetify: new Vuetify(),
+</script>
+
+<style lang="scss" scoped>
+
 </style>

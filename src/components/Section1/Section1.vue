@@ -1,35 +1,35 @@
 <template>
-<div>
-    <v-carousel hide-delimiters :show-arrows="false" height="700px">
-        <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src" reverse-transition="slide-x-transition" transition="slide-x-transition">
-            <div class="container text-right">
-                <div class="container title" color="primary">
-                    {{ item.title }}
-                    <p class="lead">
-                        DEC Pro është kompani me seli në Prishtinë e cila kryen shërbime
-                        të inxhinierisë civile me prioritet projektimin dhe ndërtimin.
-                    </p>
-                </div>
-            </div>
-        </v-carousel-item>
-    </v-carousel>
+<div class="main">
+    <div class="headtitle">
+        <h1 data-aos="fade-top">Start today!</h1>
+    </div>
+    <section class="container information" data-aos="fade-left">
+        <img src="../../assets/work.jpg" alt class="img-fluid" />
+        <div>
+            <h2 data-aos="fade-right">Your Business On the Web</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis,
+                molestiae totam? Quibusdam vel qui, corporis nesciunt esse sit sint.
+                Consequatur minus dolore nihil ab? Veritatis libero ipsam officia
+                assumenda perferendis, eligendi ex cupiditate dolore magni?
+            </p>
+            <a href="#" class="btn">Learn more</a>
+        </div>
+    </section>
 </div>
 </template>
 
-<script>
-export default {
-    data() {
-        return {
-            items: [{
-                src: require("../../assets/schematic.jpg"),
-                title: "Dec PROJECTS"
-            }]
-
-        }
-    }
+<style scoped>
+.main {
+    margin-top: 70px;
 }
-</script>
 
-<style lang="scss" scoped>
-
+.information {
+    background-color: white;
+    /* box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8); */
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.5rem;
+}
 </style>
