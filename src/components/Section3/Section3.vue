@@ -1,5 +1,5 @@
 <template>
-<div id="app">
+<div id="ap">
     <v-app id="inspire">
         <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
             <v-timeline-item v-for="(item, i) in items" :key="i" :color="item.color" :icon="item.icon" :title="item.title" :description="item.description" fill-dot data-aos="fade-right">
@@ -9,9 +9,9 @@
                     </v-card-title>
                     <v-card-text class="white text--primary">
                         <p> {{ item.description }}</p>
-                        <v-btn :color="item.color" class="mx-0" outlined>
-                            Button
-                        </v-btn>
+                        <v-card-text class="icon">
+                            <p> {{ item.icon }} </p>
+                        </v-card-text>
                     </v-card-text>
                 </v-card>
             </v-timeline-item>
@@ -23,7 +23,7 @@
 <script>
 export default {
 
-    el: '#app',
+    el: '#ap',
     data: () => ({
         items: [{
                 color: 'red lighten-2',
@@ -57,6 +57,8 @@ export default {
 // vuetify: new Vuetify(),
 </script>
 
-<style lang="scss" scoped>
-
+<style>
+.ap {
+    margin: 0px 20px 0px 20px
+}
 </style>

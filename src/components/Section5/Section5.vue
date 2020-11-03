@@ -1,6 +1,5 @@
 <template>
 <div>
-    <strong> Kontakti </strong>
 
 </div>
 </template>
