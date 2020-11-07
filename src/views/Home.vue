@@ -3,8 +3,8 @@
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <!-- IMPORT COMPONENTS HERE IN ORDER -->
     <LandingView />
-    <Section1 />
     <Section2 />
+    <Section1 />
     <Section3 />
     <ContactForm />
     <Section5 />
