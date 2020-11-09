@@ -1,6 +1,6 @@
 <template>
-  <section id="info" class="py-3">
-    <div class="container info-seaction">
+  <section class="info-seaction">
+    <div class="container">
       <div class="row">
         <div class="col-md-6 align-self-center" data-aos="fade-right">
           <h3 class="headtitle">APPLE WATCH</h3>
@@ -26,10 +26,7 @@
 
 <style scoped>
 .info-seaction {
-  margin-top: 200px 200px;
-  margin-bottom: 100px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  margin: 100px 0;
 }
 
 .headtitle {

@@ -1,5 +1,5 @@
 <template>
-  <div id="ap">
+  <div>
     <v-app id="inspire" class="my-5">
       <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
         <v-timeline-item
@@ -31,7 +31,6 @@
 
 <script>
 export default {
-  el: "#ap",
   data: () => ({
     items: [
       {
