@@ -11,6 +11,12 @@ import Vuetify from 'vuetify'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import vuetify from './plugins/vuetify';
+import VueSmoothScroll from 'vue2-smooth-scroll'
+
+Vue.use(VueSmoothScroll, {
+  duration: 400,
+  updateHistory: false,
+})
 
 Vue.config.productionTip = false;
 Vue.use(BootstrapVue);

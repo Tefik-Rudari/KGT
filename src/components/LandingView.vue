@@ -1,12 +1,14 @@
 <template>
+<div id="home">
 <div class="wrapper">
     <header class="showcase">
         <h1>KGT</h1>
         <p>
             Tregti me pakicë të gazetave dhe materialit të shkrimit, në dyqane të specializuara!
         </p>
-        <button class="btn btn-outline-light">Rreth nesh</button>
+         <a href="#about" v-smooth-scroll><button class="btn btn-outline-light"> Rreth nesh </button></a>
     </header>
+</div>
 </div>
 </template>
 

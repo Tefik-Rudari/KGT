@@ -1,30 +1,99 @@
 <template>
-  <div id="ap">
-    <v-app id="inspire" class="my-5">
-      <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
-        <v-timeline-item
-          v-for="(item, i) in items"
-          :key="i"
-          :color="item.color"
-          :icon="item.icon"
-          :title="item.title"
-          :description="item.description"
-          fill-dot
-          data-aos="fade-right"
+  <div id="services">
+    <v-app id="inspire">
+      <div>
+        <h1
+          class="d-flex justify-center mb-6"
+          :color="$vuetify.theme.dark ? 'grey darken-3' : 'grey lighten-4'"
         >
-          <v-card :color="item.color" dark>
-            <v-card-title class="title">
-              {{ item.title }}
-            </v-card-title>
-            <v-card-text class="white text--primary">
-              <p>{{ item.description }}</p>
-              <v-card-text class="icon">
-                <p>{{ item.icon }}</p>
-              </v-card-text>
-            </v-card-text>
-          </v-card>
-        </v-timeline-item>
-      </v-timeline>
+          Sherbimet qe i kryejm ne
+        </h1>
+        <v-card
+          class="d-flex justify-center mb-6"
+          :color="$vuetify.theme.dark ? 'grey darken-3' : 'grey lighten-4'"
+          flat
+          tile
+        >
+          <!-- Part 1-->
+          <div class="part1">
+            <v-row justify-space-around>
+              <v-flex xs12 sm12 md12>
+                <v-card class="mx-5 my-5 px-15 py-15" data-aos="fade-left">
+                  <v-icon class="pb-5" x-large color="green darken-2">
+                    mdi-flash
+                  </v-icon>
+                  <div class="sherbimet">
+                    <ul>
+                      <h4>sherbimi</h4>
+                    </ul>
+                    <ul>
+                      <h4>sherbimi</h4>
+                    </ul>
+                    <ul>
+                      <h4>sherbimi</h4>
+                    </ul>
+                    <ul>
+                      <h4>sherbimi</h4>
+                    </ul>
+                  </div>
+                </v-card>
+              </v-flex>
+            </v-row>
+          </div>
+          <!--Part 2 -->
+          <div class="part2">
+            <v-row justify-space-around>
+              <v-flex xs12 sm12 md12>
+                <v-card class="mx-5 my-5 px-15 py-15" data-aos="fade-bottom">
+                  <v-icon class="pb-5" x-large color="green darken-2">
+                    mdi-bookmark-multiple-outline
+                  </v-icon>
+                  <div class="sherbimet">
+                    <ul>
+                      <h4>sherbimi</h4>
+                    </ul>
+                    <ul>
+                      <h4>sherbimi</h4>
+                    </ul>
+                    <ul>
+                      <h4>sherbimi</h4>
+                    </ul>
+                    <ul>
+                      <h4>sherbimi</h4>
+                    </ul>
+                  </div>
+                </v-card>
+              </v-flex>
+            </v-row>
+          </div>
+          <!-- Part 3-->
+          <div class="part3">
+            <v-row justify-space-around>
+              <v-flex xs12 sm12 md12>
+                <v-card class="mx-5 my-5 px-15 py-15" data-aos="fade-right">
+                  <v-icon class="pb-5" x-large color="green darken-2">
+                    mdi-book-open-variant
+                  </v-icon>
+                  <div class="sherbimet">
+                    <ul>
+                      <h4>sherbimi</h4>
+                    </ul>
+                    <ul>
+                      <h4>sherbimi</h4>
+                    </ul>
+                    <ul>
+                      <h4>sherbimi</h4>
+                    </ul>
+                    <ul>
+                      <h4>sherbimi</h4>
+                    </ul>
+                  </div>
+                </v-card>
+              </v-flex>
+            </v-row>
+          </div>
+        </v-card>
+      </div>
     </v-app>
   </div>
 </template>
@@ -32,42 +101,10 @@
 <script>
 export default {
   el: "#ap",
-  data: () => ({
-    items: [
-      {
-        color: "red lighten-2",
-        icon: "mdi-star",
-        title: "Funksionet primare të kompanis",
-        description:
-          "Funksioni primar i KGT është shpërndarja efikase e materialeve të ndryshme, bëjmë tregti në sasi të vogëla me gazeta dhe materialit të shkrimit, në dyqane të specializuara. Si funksion secondar është edhe tregtia me shumicë jo e specializuar.",
-      },
-      {
-        color: "purple darken-1",
-        icon: "mdi-book-variant",
-        title: "Tregtia me shumicë jo e specializuar",
-        description: "Tregtia me shumicë jo e specializuar",
-      },
-      {
-        color: "green lighten-1",
-        icon: "mdi-airballoon",
-        title: "",
-        description: "",
-      },
-      {
-        color: "indigo",
-        icon: "mdi-buffer",
-        title: "",
-        description: "",
-      },
-    ],
-  }),
+  data: () => ({}),
 };
-// new Vue({
-// vuetify: new Vuetify(),
 </script>
 
 <style>
-.ap {
-  margin: 0px 20px 0px 20px;
-}
+@import "./Section3.css";
 </style>

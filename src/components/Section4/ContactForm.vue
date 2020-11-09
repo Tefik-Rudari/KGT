@@ -1,4 +1,5 @@
 <template>
+<div id="contact">
   <v-container class="main">
     <h2 class="head-title">Contact us</h2>
     <v-row>
@@ -48,6 +49,7 @@
       </v-flex>
     </v-row>
   </v-container>
+</div>
 </template>
 
 <script>

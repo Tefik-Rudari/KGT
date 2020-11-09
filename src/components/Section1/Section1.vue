@@ -1,34 +1,58 @@
 <template>
-  <v-container class="main">
-    <h1 data-aos="fade-top" class="">Start today!</h1>
-    <v-row class="container mt-sm-12" justify-space-around data-aos="fade-left">
-      <v-flex xs12 sm12 md6>
-        <img src="../../assets/work.jpg" alt class="img-fluid" />
-      </v-flex>
-      <v-flex xs12 sm12 md6 class="mt-sm-16" data-aos="fade-right">
-        <div class="ml-md-16">
-          <h2>Your Business On the Web</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis,
-            molestiae totam? Quibusdam vel qui, corporis nesciunt esse sit sint.
-            Consequatur minus dolore nihil ab? Veritatis libero ipsam officia
-            assumenda perferendis, eligendi ex cupiditate dolore magni?
+  <section id="info" class="py-3">
+    <div class="container info-seaction">
+      <div class="row">
+        <div class="col-md-6 align-self-center" data-aos="fade-right">
+          <h3 class="headtitle">APPLE WATCH</h3>
+          <!-- <i class="fas fa-wrench fa-3x mb-2"></i> -->
+          <p class="subtitle">
+            Heavy on features.
+            <br />
+            Light on price.
+            <!-- HERE YOU CAN USE LINE HEIGHT -->
           </p>
-          <a href="#" class="btn">Learn more</a>
+          <p class="price">From $246</p>
+          <div class="text-center">
+            <v-btn rounded dark> Buy </v-btn>
+          </div>
         </div>
-      </v-flex>
-    </v-row>
-  </v-container>
+        <div class="col-md-6" data-aos="fade-left">
+          <img src="../../assets/apple-watch.png" alt class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <style scoped>
-.main {
-  margin-top: 100px;
+.info-seaction {
+  margin-top: 200px 200px;
+  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-@media only screen and (max-width: 960px) {
-  .description {
-    margin-top: 70px;
-  }
+.headtitle {
+  font-weight: 600;
+  color: black;
+  margin-bottom: 50px;
+}
+
+.subtitle {
+  font-size: 48px;
+  color: #333;
+  font-weight: 600;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  padding: 0;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.price {
+  font-size: 21px;
+  font-weight: 600;
+  margin: 30px auto;
 }
 </style>
+
