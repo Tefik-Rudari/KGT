@@ -3,7 +3,7 @@
   <v-container class="main">
     <h2 class="head-title">Contact us</h2>
     <v-row>
-      <v-flex xs12 md6 >
+      <v-flex xs12 md6>
         <form>
           <v-text-field
             v-model="name"
@@ -31,21 +31,14 @@
             @input="$v.description.$touch()"
             @blur="$v.description.$touch()"
           ></v-text-field>
-          <v-checkbox
-            v-model="checkbox"
-            :error-messages="checkboxErrors"
-            label="Do you agree?"
-            required
-            @change="$v.checkbox.$touch()"
-            @blur="$v.checkbox.$touch()"
-          ></v-checkbox>
 
           <v-btn class="mr-4" @click="submit"> submit </v-btn>
           <v-btn @click="clear"> reset </v-btn>
         </form>
       </v-flex>
-      <v-flex xs12 md6 >
-        <Location class="location ml-5" />
+      <v-flex xs12 md6>
+        <div class="ml-md-16"></div>
+        <Location class="location" />
       </v-flex>
     </v-row>
   </v-container>
@@ -67,11 +60,6 @@ export default {
     name: { required, maxLength: maxLength(30) },
     email: { required, email },
     description: { required, maxLength: maxLength(1000) },
-    checkbox: {
-      checked(val) {
-        return val;
-      },
-    },
   },
 
   data: () => ({
@@ -79,16 +67,9 @@ export default {
     email: "",
     description: "",
     select: null,
-    checkbox: false,
   }),
 
   computed: {
-    checkboxErrors() {
-      const errors = [];
-      if (!this.$v.checkbox.$dirty) return errors;
-      !this.$v.checkbox.checked && errors.push("You must agree to continue!");
-      return errors;
-    },
     nameErrors() {
       const errors = [];
       if (!this.$v.name.$dirty) return errors;
@@ -111,7 +92,7 @@ export default {
         errors.push("description must be at most 10 characters long");
       !this.$v.description.required && errors.push("Description is required.");
       return errors;
-    }
+    },
   },
 
   methods: {
@@ -123,7 +104,6 @@ export default {
       this.name = "";
       this.email = "";
       this.select = null;
-      this.checkbox = false;
     },
   },
 };
