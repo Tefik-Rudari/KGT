@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <div>
+    <div class="about">
       <v-app id="inspire">
         <v-row align="center">
           <v-item-group
@@ -9,61 +8,45 @@
             mandatory
             tag="v-flex"
           >
-            <v-item v-for="n in length" :key="n" v-slot="{ active, toggle }">
+            <v-item v-for="item in items" :key="item.title" v-slot="{ active, toggle }">
               <div>
                 <v-btn :input-value="active" icon @click="toggle">
-                  <v-icon>mdi-record</v-icon>
+                  <v-icon>{{item.icon}}</v-icon>
                 </v-btn>
               </div>
             </v-item>
           </v-item-group>
 
           <v-col>
-            <v-window v-model="window" class="elevation-1" vertical>
-              <v-window-item v-for="n in length" :key="n">
+            <v-window v-model="window" class="elevation-0" vertical>
+              <v-window-item v-for="item in items" :key="item.title">
                 <v-card flat>
                   <v-card-text>
                     <v-row class="mb-4" align="center">
-                      <v-avatar color="grey" class="mr-4"></v-avatar>
-                      <strong class="title">Title {{ n }}</strong>
-                      <v-spacer></v-spacer>
-                      <v-btn icon>
-                        <v-icon>mdi-account</v-icon>
-                      </v-btn>
+                    <v-icon>{{ item.icon }}</v-icon>
+                      <strong class="title">Title {{ item.title }}</strong>
+                      <v-spacer></v-spacer>                
                     </v-row>
 
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
-                    </p>
+              <v-row
+        class="container mt-sm-12"
+        justify-space-around
+        data-aos="fade-left"
+      >
+        <v-flex xs12 sm12 md6>
+          <img :src="item.image" alt class="img-fluid" />
+        </v-flex>
+        <v-flex xs12 sm12 md6 class="mt-sm-16" data-aos="fade-right">
+          <div class="ml-md-16">
+            <h2>{{ item.title }}</h2>
+            <p>
+              {{item.description}}
+            </p>
+          </div>
+        </v-flex>
+      </v-row>
 
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
-                    </p>
-
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
-                    </p>
+                   
                   </v-card-text>
                 </v-card>
               </v-window-item>
@@ -72,17 +55,42 @@
         </v-row>
       </v-app>
     </div>
-  </div>
 </template>
 
 <script>
 export default {
   data: () => ({
-    length: 3,
     window: 0,
+    items: [
+      {
+        title: "Flash",
+        icon: "mdi-flash",
+        description: "LoremLorem ipsum dolor, sit amet consectetur adipisicing elit.Veritatis, molestiae totam? Quibusdam vel qui, corporis nesciunt esse sit sint. Consequatur minus dolore nihil ab? Veritatis libero ipsam officia assumenda perferendis, eligendi ex cupiditate dolore magni?",
+        image: require ("../../assets/work.jpg")
+      },
+      {
+        title: "Bookmark",
+        icon: " mdi-bookmark-multiple-outline",
+        description: "LoremLorem ipsum dolor, sit amet consectetur adipisicing elit.Veritatis, molestiae totam? Quibusdam vel qui, corporis nesciunt esse sit sint. Consequatur minus dolore nihil ab? Veritatis libero ipsam officia assumenda perferendis, eligendi ex cupiditate dolore magni?",
+        image: require ("../../assets/work.jpg")
+      },
+      {
+        title: "Book",
+        icon: "mdi-book-open-variant",
+        description: "LoremLorem ipsum dolor, sit amet consectetur adipisicing elit.Veritatis, molestiae totam? Quibusdam vel qui, corporis nesciunt esse sit sint. Consequatur minus dolore nihil ab? Veritatis libero ipsam officia assumenda perferendis, eligendi ex cupiditate dolore magni?",
+        image: require ("../../assets/work.jpg")
+      },
+
+    ]
+
+
+    
   }),
 };
 </script>
 
 <style lang="scss" scoped>
+.v-application .mr-6 {
+    margin-left: 50px;
+}
 </style>
