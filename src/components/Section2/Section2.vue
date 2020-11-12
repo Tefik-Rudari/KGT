@@ -8,7 +8,6 @@
         <v-item-group
           v-model="window"
           class="shrink mr-6"
-          mandatory
           tag="v-flex"
         >
           <v-item
