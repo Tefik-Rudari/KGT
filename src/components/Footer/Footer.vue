@@ -1,5 +1,5 @@
 <template>
-  <div id="footer">
+  <div id="footer" class="container">
     <v-footer padless>
       <v-card flat class="text-center back">
         <v-card-text class="black--text">

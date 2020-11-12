@@ -1,6 +1,6 @@
 <template>
   <div id="about">
-    <v-app id="inspire">
+    <v-container id="inspire">
       <h1 data-aos="fade-top" class="absolute head-title">Rreth nesh!</h1>
 
       <v-row align="center">
@@ -65,7 +65,7 @@
           </v-window>
         </v-col>
       </v-row>
-    </v-app>
+    </v-container>
   </div>
 </template>
 
