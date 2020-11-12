@@ -1,9 +1,0 @@
-#footer {
-    background-color: antiquewhite;
-}
-.v-btn__content:hover { 
-    box-shadow: 0 5px 15px antiquewhite;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-

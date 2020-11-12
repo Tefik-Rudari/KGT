@@ -3,7 +3,7 @@
     <v-app id="inspire">
       <div>
         <h1
-          class="d-flex justify-center mb-6"
+          class="d-flex justify-center mb-6 head-title"
           :color="$vuetify.theme.dark ? 'grey darken-3' : 'grey lighten-4'"
         >
           Sherbimet qe i kryejm ne
@@ -105,5 +105,27 @@ export default {
 </script>
 
 <style>
-@import "./Section3.css";
+.head-title {
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+}
+
+.services {
+    margin: 0px 20px 0px 20px
+}
+.titulli {
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+}
+.sherbimet ul{
+    margin: 10px 0px;
+    padding: 10px 0px 0px 0px;
+}
+.v-card:hover .v-card:hover {
+    box-shadow: 0 5px 15px antiquewhite;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
 </style>

@@ -1,8 +1,7 @@
 <template>
   <div id="about">
-
-    <v-app id="inspire">
-      <h1 data-aos="fade-top" class="absolute">Rreth nesh!</h1>
+    <v-container id="inspire">
+      <h1 data-aos="fade-top" class="absolute head-title">Rreth nesh!</h1>
 
       <v-row align="center">
         <v-item-group
@@ -30,7 +29,9 @@
                 <v-card-text>
                   <v-row class="mb-4" align="center">
                     <v-icon data-aos="fade-right">{{ item.icon }}</v-icon>
-                    <strong class="title" data-aos="fade-right">{{ item.title }}</strong>
+                    <strong class="title" data-aos="fade-right">{{
+                      item.title
+                    }}</strong>
                     <v-spacer></v-spacer>
                   </v-row>
 
@@ -63,7 +64,7 @@
           </v-window>
         </v-col>
       </v-row>
-    </v-app>
+    </v-container>
   </div>
 </template>
 
@@ -75,19 +76,22 @@ export default {
       {
         title: " Flash",
         icon: "mdi-flash",
-        description:"LoremLorem ipsum dolor, sit amet consectetur adipisicing elit.Veritatis, molestiae totam? Quibusdam vel qui, corporis nesciunt esse sit sint. Consequatur minus dolore nihil ab? Veritatis libero ipsam officia assumenda perferendis, eligendi ex cupiditate dolore magni?",
+        description:
+          "LoremLorem ipsum dolor, sit amet consectetur adipisicing elit.Veritatis, molestiae totam? Quibusdam vel qui, corporis nesciunt esse sit sint. Consequatur minus dolore nihil ab? Veritatis libero ipsam officia assumenda perferendis, eligendi ex cupiditate dolore magni?",
         image: require("../../assets/work.jpg"),
       },
       {
         title: " Bookmark",
         icon: " mdi-bookmark-multiple-outline",
-        description:"LoremLorem ipsum dolor, sit amet consectetur adipisicing elit.Veritatis, molestiae totam? Quibusdam vel qui, corporis nesciunt esse sit sint. Consequatur minus dolore nihil ab? Veritatis libero ipsam officia assumenda perferendis, eligendi ex cupiditate dolore magni?",
+        description:
+          "LoremLorem ipsum dolor, sit amet consectetur adipisicing elit.Veritatis, molestiae totam? Quibusdam vel qui, corporis nesciunt esse sit sint. Consequatur minus dolore nihil ab? Veritatis libero ipsam officia assumenda perferendis, eligendi ex cupiditate dolore magni?",
         image: require("../../assets/work.jpg"),
       },
       {
         title: " Book",
         icon: "mdi-book-open-variant",
-        description:"LoremLorem ipsum dolor, sit amet consectetur adipisicing elit.Veritatis, molestiae totam? Quibusdam vel qui, corporis nesciunt esse sit sint. Consequatur minus dolore nihil ab? Veritatis libero ipsam officia assumenda perferendis, eligendi ex cupiditate dolore magni?",
+        description:
+          "LoremLorem ipsum dolor, sit amet consectetur adipisicing elit.Veritatis, molestiae totam? Quibusdam vel qui, corporis nesciunt esse sit sint. Consequatur minus dolore nihil ab? Veritatis libero ipsam officia assumenda perferendis, eligendi ex cupiditate dolore magni?",
         image: require("../../assets/work.jpg"),
       },
     ],
@@ -98,5 +102,9 @@ export default {
 <style lang="scss" scoped>
 .v-application .mr-6 {
   margin-left: 50px;
+}
+.head-title {
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
 }
 </style>
