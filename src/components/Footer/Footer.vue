@@ -1,6 +1,7 @@
 <template>
-  <v-footer padless>
-    <v-card flat tile class="text-center">
+<div id="footer"> 
+  <v-footer padless >
+    <v-card flat  class="text-center">
       <v-card-text>
         <v-btn v-for="icon in icons" :key="icon" class="mx-4 " icon>
           <v-icon size="24px">
@@ -27,6 +28,7 @@
       </v-card-text>
     </v-card>
   </v-footer>
+</div>
 </template>
 
 <script>
@@ -36,3 +38,7 @@ export default {
   }),
 };
 </script>
+
+<style>
+@import "./Footer.css";
+</style>
