@@ -1,48 +1,48 @@
 <template>
-<div id="contact">
-  <v-container class="main">
-    <h2 class="head-title">Contact us</h2>
-    <v-row>
-      <v-flex xs12 md6>
-        <form>
-          <v-text-field
-            v-model="name"
-            :error-messages="nameErrors"
-            :counter="30"
-            label="Name"
-            required
-            @input="$v.name.$touch()"
-            @blur="$v.name.$touch()"
-          ></v-text-field>
-          <v-text-field
-            v-model="email"
-            :error-messages="emailErrors"
-            label="E-mail"
-            required
-            @input="$v.email.$touch()"
-            @blur="$v.email.$touch()"
-          ></v-text-field>
-          <v-text-field
-            v-model="description"
-            :error-messages="textErrors"
-            :counter="1000"
-            label="Description"
-            required
-            @input="$v.description.$touch()"
-            @blur="$v.description.$touch()"
-          ></v-text-field>
+  <div id="contact" class="back">
+    <v-container class="main pt-10">
+      <h2 class="head-title">Contact us</h2>
+      <v-row>
+        <v-flex xs12 md6>
+          <form>
+            <v-text-field
+              v-model="name"
+              :error-messages="nameErrors"
+              :counter="30"
+              label="Name"
+              required
+              @input="$v.name.$touch()"
+              @blur="$v.name.$touch()"
+            ></v-text-field>
+            <v-text-field
+              v-model="email"
+              :error-messages="emailErrors"
+              label="E-mail"
+              required
+              @input="$v.email.$touch()"
+              @blur="$v.email.$touch()"
+            ></v-text-field>
+            <v-text-field
+              v-model="description"
+              :error-messages="textErrors"
+              :counter="1000"
+              label="Description"
+              required
+              @input="$v.description.$touch()"
+              @blur="$v.description.$touch()"
+            ></v-text-field>
 
-          <v-btn class="mr-4" @click="submit"> submit </v-btn>
-          <v-btn @click="clear"> reset </v-btn>
-        </form>
-      </v-flex>
-      <v-flex xs12 md6>
-        <div class="ml-md-16"></div>
-        <Location class="location" />
-      </v-flex>
-    </v-row>
-  </v-container>
-</div>
+            <v-btn class="mr-4" @click="submit"> submit </v-btn>
+            <v-btn @click="clear"> reset </v-btn>
+          </form>
+        </v-flex>
+        <v-flex xs12 md6>
+          <div class="ml-md-16"></div>
+          <Location class="location" />
+        </v-flex>
+      </v-row>
+    </v-container>
+  </div>
 </template>
 
 <script>
@@ -110,5 +110,22 @@ export default {
 </script>
 
 <style scoped>
-@import "./ContactForm.css";
+.main {
+  margin-top: 100px !important;
+  padding-bottom: 100px !important;
+}
+.back {
+  background-color: #f5f5f5 !important;
+}
+.head-title {
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 960px) {
+  .location {
+    margin-top: 70px;
+  }
+}
 </style>

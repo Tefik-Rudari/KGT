@@ -7,8 +7,8 @@
     height: 60px;
     opacity: 0.8;    
     transition: top 0.99s;
-    background: antiquewhite;
-    box-shadow: 0 5px 5px antiquewhite;
+    background: white;
+    /* box-shadow: 0 5px 5px antiquewhite; */
     
 }
 
