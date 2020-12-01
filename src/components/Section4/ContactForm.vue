@@ -48,6 +48,7 @@
 <script>
 import { validationMixin } from "vuelidate";
 import { required, maxLength, email } from "vuelidate/lib/validators";
+import axios from "axios";
 import Location from "./Location.vue";
 
 export default {
@@ -98,6 +99,20 @@ export default {
   methods: {
     submit() {
       this.$v.$touch();
+      axios
+        .post(
+          "http://localhost:3030/api/new/post",
+          this.name, // the data to post
+          {
+            headers: {
+              "Content-type": "application/x-www-form-urlencoded",
+            },
+          }
+        )
+        .then((response) => {
+          "testt message";
+          console.log(response);
+        });
     },
     clear() {
       this.$v.$reset();

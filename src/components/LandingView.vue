@@ -25,7 +25,7 @@
 .showcase {
   min-height: 90vh;
   background: linear-gradient(0deg, #9c888924, #776163ad),
-    url(/img/desk.709b7c3a.jpg);
+    url("../assets/desk.jpg");
   background-attachment: fixed;
   background-position: center;
   color: #fff;
