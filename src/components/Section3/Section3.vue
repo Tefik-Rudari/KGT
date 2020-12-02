@@ -9,10 +9,11 @@
           Sherbimet qe i kryejm ne
         </h1>
         <v-card
-          class="d-flex justify-center mb-6"
+          class="d-flex justify-center mb-6 karta"
           :color="$vuetify.theme.dark ? 'grey darken-3' : 'grey lighten-4'"
           flat
           tile
+        
         >
           <!-- Part 1-->
           <div class="part1">
@@ -24,17 +25,9 @@
                   </v-icon>
                   <div class="sherbimet">
                     <ul>
-                      <h4>sherbimi</h4>
+                      <h4 class="py-8">Tregeti</h4>
                     </ul>
-                    <ul>
-                      <h4>sherbimi</h4>
-                    </ul>
-                    <ul>
-                      <h4>sherbimi</h4>
-                    </ul>
-                    <ul>
-                      <h4>sherbimi</h4>
-                    </ul>
+            
                   </div>
                 </v-card>
               </v-flex>
@@ -50,17 +43,9 @@
                   </v-icon>
                   <div class="sherbimet">
                     <ul>
-                      <h4>sherbimi</h4>
+                      <h4 class="py-8">Këshillim</h4>
                     </ul>
-                    <ul>
-                      <h4>sherbimi</h4>
-                    </ul>
-                    <ul>
-                      <h4>sherbimi</h4>
-                    </ul>
-                    <ul>
-                      <h4>sherbimi</h4>
-                    </ul>
+           
                   </div>
                 </v-card>
               </v-flex>
@@ -75,17 +60,8 @@
                     mdi-book-open-variant
                   </v-icon>
                   <div class="sherbimet">
-                    <ul>
-                      <h4>sherbimi</h4>
-                    </ul>
-                    <ul>
-                      <h4>sherbimi</h4>
-                    </ul>
-                    <ul>
-                      <h4>sherbimi</h4>
-                    </ul>
-                    <ul>
-                      <h4>sherbimi</h4>
+                             <ul>
+                      <h4 class="py-8">Të tjera</h4>
                     </ul>
                   </div>
                 </v-card>
@@ -126,6 +102,10 @@ export default {
     box-shadow: 0 5px 15px antiquewhite;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+
+}
+.karta {
+
 }
 
 </style>

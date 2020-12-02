@@ -29,9 +29,7 @@
                 <v-card-text>
                   <v-row class="mb-4" align="center">
                     <v-icon data-aos="fade-right">{{ item.icon }}</v-icon>
-                    <strong class="title" data-aos="fade-right">{{
-                      item.title
-                    }}</strong>
+                    <strong class="title" data-aos="fade-right"></strong>
                     <v-spacer></v-spacer>
                   </v-row>
 
@@ -74,25 +72,25 @@ export default {
     window: 0,
     items: [
       {
-        title: " Flash",
+        title: " Partneritet",
         icon: "mdi-flash",
         description:
-          "LoremLorem ipsum dolor, sit amet consectetur adipisicing elit.Veritatis, molestiae totam? Quibusdam vel qui, corporis nesciunt esse sit sint. Consequatur minus dolore nihil ab? Veritatis libero ipsam officia assumenda perferendis, eligendi ex cupiditate dolore magni?",
+          "Kompania jonë ofron shërbime tregtare për pakicë të gazetave dhe materialeve të shkrimit, për dyqane të specializuara dhe jo të specializuara. Çmimet e volitshme dhe cilësia e produkteve janë prioriteti i kompanisë sonë.",
         image: require("../../assets/work.jpg"),
       },
       {
-        title: " Bookmark",
+        title: " Këshillim",
         icon: " mdi-bookmark-multiple-outline",
         description:
-          "LoremLorem ipsum dolor, sit amet consectetur adipisicing elit.Veritatis, molestiae totam? Quibusdam vel qui, corporis nesciunt esse sit sint. Consequatur minus dolore nihil ab? Veritatis libero ipsam officia assumenda perferendis, eligendi ex cupiditate dolore magni?",
-        image: require("../../assets/work.jpg"),
+          "KGT i ofron klientëve edhe këshillim për fusha të ndryshme. Ato fusha janë: Aktivitetet e këshillimeve kompjuterike, Teknologjia tjetër informative dhe aktivitetet shërbyese kompjuterike, Aktivitetet e ndërmjetësimit të specializuar për shitjen e produkteve të veçanta, Publikimi i softuerëve të tjerë, Aktivitetet e programimit kompjuterik dhe Aktivitete të menaxhimit të instalimeve kompjuterike.",
+        image: require("../../assets/meeting.jpg"),
       },
       {
-        title: " Book",
+        title: " Të tjera",
         icon: "mdi-book-open-variant",
         description:
-          "LoremLorem ipsum dolor, sit amet consectetur adipisicing elit.Veritatis, molestiae totam? Quibusdam vel qui, corporis nesciunt esse sit sint. Consequatur minus dolore nihil ab? Veritatis libero ipsam officia assumenda perferendis, eligendi ex cupiditate dolore magni?",
-        image: require("../../assets/work.jpg"),
+          "KGT ofron shërbime si: përkthime dhe interpretim, prodhim të materialit prej letrës për zyre, publikim të librave, publikim të gazetave, publikim të revistave dhe peridikëve, shtypje të gazetave. Poashtu edhe: libërlidhja dhe shërbime të ngjashme, prodhim të artikujve të tjerë të prej letrës dhe kartoni, përgatitje para-shtypjes dhe para-publikimit. ",
+        image: require("../../assets/other.jpg"),
       },
     ],
   }),
