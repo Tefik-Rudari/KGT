@@ -3,21 +3,22 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 align-self-center" data-aos="fade-right">
-          <h3 class="headtitle">APPLE WATCH</h3>
-          <!-- <i class="fas fa-wrench fa-3x mb-2"></i> -->
+          <h3 class="headtitle">KGT</h3>
           <p class="subtitle">
-            Heavy on features.
+            Kryej sherbimet permes
             <br />
-            Light on price.
-            <!-- HERE YOU CAN USE LINE HEIGHT -->
+            telefonit tuaj te mencur
           </p>
-          <p class="price">From $246</p>
+          <p class="price">Nga 0.10€</p>
           <div class="text-center">
-            <v-btn rounded dark> Buy </v-btn>
+            <v-btn rounded>
+              <a class="black--text" href="#contact" v-smooth-scroll>Printo prej shpis</a>
+
+            </v-btn>
           </div>
         </div>
         <div class="col-md-6" data-aos="fade-left">
-          <img src="../../assets/apple-watch.png" alt class="img-fluid" />
+          <img src="../../assets/images.png" alt class="img-fluid" />
         </div>
       </div>
     </div>
