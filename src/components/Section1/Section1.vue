@@ -1,5 +1,5 @@
 <template>
-  <section class="info-seaction">
+  <section id="info" class="info-seaction">
     <div class="container">
       <div class="row">
         <div class="col-md-6 align-self-center" data-aos="fade-right">

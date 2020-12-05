@@ -4,17 +4,13 @@
       <v-footer padless>
         <v-card flat class="text-center container back">
           <v-card-text class="black--text pt-0">
-            Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet.
-            Mauris cursus commodo interdum. Praesent ut risus eget metus luctus
-            accumsan id ultrices nunc. Sed at orci sed massa consectetur
-            dignissim a sit amet dui. Duis commodo vitae velit et faucibus.
-            Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum
-            ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel
-            diam elementum tempor vel ut orci. Orci varius natoque penatibus et
-            magnis dis parturient montes, nascetur ridiculus mus.
+            Kompania jonë ofron shërbime tregtare për pakicë të gazetave dhe
+            materialeve të shkrimit, për dyqane të specializuara dhe jo të
+            specializuara. Çmimet e volitshme dhe cilësia e produkteve janë
+            prioriteti i kompanisë sonë.<br />
+            Na gjeni ne lokacionin me larte ose na
+            kontaktoni ne emailin tone per cdo pyetje apo printime te radhes.
           </v-card-text>
-
-          <v-divider></v-divider>
 
           <v-card-text class="black--text">
             {{ new Date().getFullYear() }} — <strong>KGT</strong>
