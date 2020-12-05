@@ -4,17 +4,18 @@
       <div class="row">
         <div class="col-md-6 align-self-center" data-aos="fade-right">
           <h3 class="headtitle">KGT</h3>
+          <!-- <i class="fas fa-wrench fa-3x mb-2"></i> -->
           <p class="subtitle">
-            Kryej sherbimet permes
+            Printo shpejt
             <br />
-            telefonit tuaj te mencur
+            Dhe arsyeshem
+            <!-- HERE YOU CAN USE LINE HEIGHT -->
           </p>
           <p class="price">Nga 0.10€</p>
           <div class="text-center">
-            <v-btn rounded>
-              <a class="black--text" href="#contact" v-smooth-scroll>Printo prej shpis</a>
-
-            </v-btn>
+            <a href="#contact" v-smooth-scroll
+              ><v-btn rounded dark> Na kontaktoni </v-btn></a
+            >
           </div>
         </div>
         <div class="col-md-6" data-aos="fade-left">

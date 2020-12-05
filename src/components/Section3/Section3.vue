@@ -13,7 +13,6 @@
           :color="$vuetify.theme.dark ? 'grey darken-3' : 'grey lighten-4'"
           flat
           tile
-        
         >
           <!-- Part 1-->
           <div class="part1">
@@ -27,7 +26,6 @@
                     <ul>
                       <h4 class="py-8">Tregeti</h4>
                     </ul>
-            
                   </div>
                 </v-card>
               </v-flex>
@@ -45,7 +43,6 @@
                     <ul>
                       <h4 class="py-8">Këshillim</h4>
                     </ul>
-           
                   </div>
                 </v-card>
               </v-flex>
@@ -60,7 +57,7 @@
                     mdi-book-open-variant
                   </v-icon>
                   <div class="sherbimet">
-                             <ul>
+                    <ul>
                       <h4 class="py-8">Të tjera</h4>
                     </ul>
                   </div>
@@ -87,25 +84,21 @@ export default {
 }
 
 .services {
-    margin: 0px 20px 0px 20px
+  margin: 0px 20px 0px 20px;
 }
 .titulli {
-    margin: 10px;
-    padding: 10px;
-    position: relative;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
 }
-.sherbimet ul{
-    margin: 10px 0px;
-    padding: 10px 0px 0px 0px;
+.sherbimet ul {
+  margin: 10px 0px;
+  padding: 10px 0px 0px 0px;
 }
 .v-card:hover .v-card:hover {
-    box-shadow: 0 5px 15px antiquewhite;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-
+  box-shadow: 0 5px 15px antiquewhite;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
 }
-.karta {
-
-}
-
 </style>
