@@ -3,6 +3,7 @@
     <div id="footer" class="back">
       <v-footer padless>
         <v-card flat class="text-center container back">
+<<<<<<< HEAD
           <v-card
             id="contacti"
             max-width="375"
@@ -37,8 +38,16 @@
               </v-list-item>
             </v-list>
           </v-card>
-
-          <v-divider></v-divider>
+=======
+          <v-card-text class="black--text pt-0">
+            Kompania jonë ofron shërbime tregtare për pakicë të gazetave dhe
+            materialeve të shkrimit, për dyqane të specializuara dhe jo të
+            specializuara. Çmimet e volitshme dhe cilësia e produkteve janë
+            prioriteti i kompanisë sonë.<br />
+            Na gjeni ne lokacionin me larte ose na
+            kontaktoni ne emailin tone per cdo pyetje apo printime te radhes.
+          </v-card-text>
+>>>>>>> 93586c3a7a2896f1651dad9963d4352645b4bdb7
 
           <v-card-text class="black--text">
             {{ new Date().getFullYear() }} — <strong>KGT</strong>

@@ -3,8 +3,9 @@
     <div id="navbar">
       <ul>
         <li><a href="#home" v-smooth-scroll>Home</a></li>
-        <li><a href="#about" v-smooth-scroll>About</a></li>
+        <li><a href="#info" v-smooth-scroll>Fillo</a></li>
         <li><a href="#services" v-smooth-scroll>Serviset </a></li>
+        <li><a href="#about" v-smooth-scroll>About</a></li>
         <li><a href="#contact" v-smooth-scroll>Contact</a></li>
       </ul>
     </div>
