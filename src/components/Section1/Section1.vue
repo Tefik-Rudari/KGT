@@ -11,7 +11,7 @@
             Dhe arsyeshem
             <!-- HERE YOU CAN USE LINE HEIGHT -->
           </p>
-          <p class="price">Nga 0.10€</p>
+          <p class="price"></p>
           <div class="text-center">
             <a href="#contact" v-smooth-scroll
               ><v-btn rounded dark> Na kontaktoni </v-btn></a
@@ -39,8 +39,8 @@
   font-size: 48px;
   color: #333;
   font-weight: 600;
-  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
-    "Arial", sans-serif;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
   padding: 0;
   margin: 0;
   line-height: 1.3;

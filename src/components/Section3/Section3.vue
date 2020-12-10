@@ -8,16 +8,22 @@
         >
           Sherbimet qe i kryejm ne
         </h1>
-        <v-card
+        <v-flex 
+        xs3 sm12 md12
+        
+        >
+
+        <v-card id="carda"
           class="d-flex justify-center mb-6 karta"
           :color="$vuetify.theme.dark ? 'grey darken-3' : 'grey lighten-4'"
           flat
           tile
+          xs3 sm12 md12
         >
           <!-- Part 1-->
           <div class="part1">
             <v-row justify-space-around>
-              <v-flex xs12 sm12 md12>
+              <v-flex >
                 <v-card class="mx-5 my-5 px-15 py-15" data-aos="fade-left">
                   <v-icon class="pb-5" x-large color="green darken-2">
                     mdi-flash
@@ -34,7 +40,7 @@
           <!--Part 2 -->
           <div class="part2">
             <v-row justify-space-around>
-              <v-flex xs12 sm12 md12>
+              <v-flex >
                 <v-card class="mx-5 my-5 px-15 py-15" data-aos="fade-bottom">
                   <v-icon class="pb-5" x-large color="green darken-2">
                     mdi-bookmark-multiple-outline
@@ -51,7 +57,7 @@
           <!-- Part 3-->
           <div class="part3">
             <v-row justify-space-around>
-              <v-flex xs12 sm12 md12>
+              <v-flex>
                 <v-card class="mx-5 my-5 px-15 py-15" data-aos="fade-right">
                   <v-icon class="pb-5" x-large color="green darken-2">
                     mdi-book-open-variant
@@ -66,6 +72,7 @@
             </v-row>
           </div>
         </v-card>
+        </v-flex>
       </div>
     </v-app>
   </div>
@@ -85,6 +92,7 @@ export default {
 
 .services {
   margin: 0px 20px 0px 20px;
+  min-height: 0%;
 }
 .titulli {
   margin: 10px;
@@ -95,10 +103,15 @@ export default {
   margin: 10px 0px;
   padding: 10px 0px 0px 0px;
 }
-.v-card:hover .v-card:hover {
+#carda:hover .carda:hover {
   box-shadow: 0 5px 15px antiquewhite;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   cursor: pointer;
 }
+
+.v-application--wrap {
+  
+  min-height: 150px;
+  }
 </style>

@@ -27,11 +27,7 @@
             <v-window-item v-for="item in items" :key="item.title">
               <v-card flat>
                 <v-card-text>
-                  <!-- <v-row class="mb-4" align="center">
-                    <v-icon data-aos="fade-right">{{ item.icon }}</v-icon>
-                    <strong class="title" data-aos="fade-right"></strong>
-                    <v-spacer></v-spacer>
-                  </v-row> -->
+          
 
                   <v-row
                     class="container mt-sm-12"
@@ -98,6 +94,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .v-application .mr-6 {
   margin-left: 50px;
 }

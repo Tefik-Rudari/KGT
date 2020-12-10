@@ -3,16 +3,40 @@
     <div id="footer" class="back">
       <v-footer padless>
         <v-card flat class="text-center container back">
-          <v-card-text class="black--text pt-0">
-            Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet.
-            Mauris cursus commodo interdum. Praesent ut risus eget metus luctus
-            accumsan id ultrices nunc. Sed at orci sed massa consectetur
-            dignissim a sit amet dui. Duis commodo vitae velit et faucibus.
-            Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum
-            ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel
-            diam elementum tempor vel ut orci. Orci varius natoque penatibus et
-            magnis dis parturient montes, nascetur ridiculus mus.
-          </v-card-text>
+          <v-card
+            id="contacti"
+            max-width="375"
+            class="mx-auto back"
+            flat
+          >
+            <v-list two-line color="#f5f5f5">
+              <v-list-item>
+                <v-list-item-icon>
+                  <v-icon color="red">
+                    mdi-phone
+                  </v-icon>
+                </v-list-item-icon>
+
+                <v-list-item-content>
+                  <v-list-item-title>(650) 555-1234</v-list-item-title>
+                  <v-list-item-subtitle>Mobile</v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
+
+              <v-list-item>
+                <v-list-item-icon>
+                  <v-icon color="indigo">
+                    mdi-email
+                  </v-icon>
+                </v-list-item-icon>
+
+                <v-list-item-content>
+                  <v-list-item-title>aliconnors@example.com</v-list-item-title>
+                  <v-list-item-subtitle>Personal</v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
+            </v-list>
+          </v-card>
 
           <v-divider></v-divider>
 
@@ -29,9 +53,7 @@
 .back {
   background-color: #f5f5f5 !important;
 }
-.v-btn__content:hover {
-  box-shadow: 0 5px 15px antiquewhite;
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+#contacti {
+  background-color: #f5f5f5 !important;
 }
 </style>
