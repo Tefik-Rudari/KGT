@@ -1,6 +1,6 @@
 <template>
-  <div id="about">
-    <v-container id="inspire">
+  <div id="about" class="section2">
+    <v-container id="inspire" >
       <h1 data-aos="fade-top" class="absolute head-title">Rreth nesh!</h1>
 
       <v-row align="center">
@@ -27,12 +27,6 @@
             <v-window-item v-for="item in items" :key="item.title">
               <v-card flat>
                 <v-card-text>
-                  <!-- <v-row class="mb-4" align="center">
-                    <v-icon data-aos="fade-right">{{ item.icon }}</v-icon>
-                    <strong class="title" data-aos="fade-right"></strong>
-                    <v-spacer></v-spacer>
-                  </v-row> -->
-
                   <v-row
                     class="container mt-sm-12"
                     justify-space-around
@@ -98,6 +92,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.section2{
+  margin-top: 150px;;
+}
 .v-application .mr-6 {
   margin-left: 50px;
 }
