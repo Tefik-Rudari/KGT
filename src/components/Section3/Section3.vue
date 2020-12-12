@@ -79,6 +79,7 @@ export default {
 
 .services {
   margin: 0px 20px 0px 20px;
+  min-height: 0%;
 }
 .titulli {
   margin: 10px;
@@ -95,7 +96,4 @@ export default {
   transform: scale(1.1);
   cursor: pointer;
 }
-/* .kart:hover {
-  cursor: pointer;
-} */
 </style>
